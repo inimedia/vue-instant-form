@@ -1,4 +1,4 @@
-# vue-schema-form
+# vue-instant-form
 
 > Vue form generator based on JSON schema
 
@@ -36,12 +36,12 @@ npm install --save vue-instant-form
 #### Import Component to your Vue Instance
 
 ``` javascript
-import VueSchemaForm from 'vue-schema-form';
+import VueInstantForm from 'vue-instant-form';
 
 const app = new Vue({
   el: '#app',
   components: {
-    'vue-schema-form': VueSchemaForm
+    'vue-instant-form': VueInstantForm
   },
   data: function () {
     return {
@@ -58,7 +58,7 @@ const app = new Vue({
 
 ``` html
 <head>
-  <!-- vue-schema-form dependencies -->
+  <!-- vue-instant-form dependencies -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -71,12 +71,12 @@ const app = new Vue({
 
 <body>
   <div id="app">
-    <vue-schema-form  v-model="data"
+    <vue-instant-form  v-model="data"
                       :form-schema="schema"
                       :form-actions="actions"
                       :form-options="options"
-                      ref="SchemaForm">
-    </vue-schema-form>
+                      ref="InstantForm">
+    </vue-instant-form>
   </div>
 </body>
 ```
@@ -103,7 +103,7 @@ actions: {
   reset: {
     name: 'reset', label: 'Reset', icon: 'fa fa-check', class: 'btn btn-sm btn-info',
     handler: function () {
-      vm.$refs.SchemaForm.reset();
+      vm.$refs.InstantForm.reset();
     }
   },
   cancel: {
@@ -467,7 +467,7 @@ schema: {
 
 File upload field requires server endpoint which receive data as POST and DELETE request.
 For the details please refers to http://docs.fineuploader.com/branch/master/endpoint_handlers/traditional.html.
-However, vue-schema-form already comes with Laravel endpoint example, please check [LaravelController.php](static/backend-examples/LaravelController.php).
+However, vue-instant-form already comes with Laravel endpoint example, please check [LaravelController.php](static/backend-examples/LaravelController.php).
 Laravel endpoint highly utilize migration and model to realize database table **uploaded_files**
 which track all uploaded file, so you can add relation to other object at the back end.
 

@@ -1,6 +1,6 @@
 {
   "name": "vue-instant-form",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue form generator based on JSON schema",
   "author": "Adhe Widianjaya <adwidianjaya@gmail.com>",
   "private": false,

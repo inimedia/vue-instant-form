@@ -1,0 +1,126 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.5/bin:/usr/texbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Library/TeX/texbin:/Users/adhe/.composer/vendor/bin:/Users/adhe/Library/Android/sdk/platform-tools:/Users/adhe/Library/Android/sdk/tools
+
+Yarn version: 
+  0.17.8
+
+Node version: 
+  6.8.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "vue-instant-form",
+    "version": "1.0.0",
+    "description": "Vue form generator based on JSON schema",
+    "author": "Adhe Widianjaya <adwidianjaya@gmail.com>",
+    "private": false,
+    "scripts": {
+      "dev": "node build/dev-server.js",
+      "build": "node build/build.js",
+      "unit": "karma start test/unit/karma.conf.js --single-run",
+      "e2e": "node test/e2e/runner.js",
+      "test": "npm run unit && npm run e2e"
+    },
+    "dependencies": {
+      "vue": "^2.0.1"
+    },
+    "devDependencies": {
+      "autoprefixer": "^6.4.0",
+      "babel-core": "^6.0.0",
+      "babel-loader": "^6.0.0",
+      "babel-plugin-transform-runtime": "^6.0.0",
+      "babel-preset-es2015": "^6.0.0",
+      "babel-preset-stage-2": "^6.0.0",
+      "babel-register": "^6.0.0",
+      "chai": "^3.5.0",
+      "chalk": "^1.1.3",
+      "chromedriver": "^2.21.2",
+      "connect-history-api-fallback": "^1.1.0",
+      "cross-spawn": "^4.0.2",
+      "css-loader": "^0.25.0",
+      "eventsource-polyfill": "^0.9.6",
+      "express": "^4.13.3",
+      "extract-text-webpack-plugin": "^1.0.1",
+      "file-loader": "^0.9.0",
+      "function-bind": "^1.0.2",
+      "html-webpack-plugin": "^2.8.1",
+      "http-proxy-middleware": "^0.17.2",
+      "inject-loader": "^2.0.1",
+      "isparta-loader": "^2.0.0",
+      "json-loader": "^0.5.4",
+      "karma": "^1.3.0",
+      "karma-coverage": "^1.1.1",
+      "karma-mocha": "^1.2.0",
+      "karma-phantomjs-launcher": "^1.0.0",
+      "karma-sinon-chai": "^1.2.0",
+      "karma-sourcemap-loader": "^0.3.7",
+      "karma-spec-reporter": "0.0.26",
+      "karma-webpack": "^1.7.0",
+      "lodash": "^4.16.4",
+      "lolex": "^1.4.0",
+      "mocha": "^3.1.0",
+      "nightwatch": "^0.9.8",
+      "opn": "^4.0.2",
+      "ora": "^0.3.0",
+      "phantomjs-prebuilt": "^2.1.3",
+      "selenium-server": "2.53.1",
+      "semver": "^5.3.0",
+      "shelljs": "^0.7.4",
+      "sinon": "^1.17.3",
+      "sinon-chai": "^2.8.0",
+      "url-loader": "^0.5.7",
+      "vue-loader": "^9.4.0",
+      "vue-style-loader": "^1.0.0",
+      "webpack": "^1.13.2",
+      "webpack-dev-middleware": "^1.8.3",
+      "webpack-hot-middleware": "^2.12.2",
+      "webpack-merge": "^0.14.1"
+    },
+    "engines": {
+      "node": ">= 4.0.0",
+      "npm": ">= 3.0.0"
+    },
+    "main": "index.js",
+    "directories": {
+      "test": "test"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/inimedia/vue-instant-form.git"
+    },
+    "keywords": [
+      "form",
+      "schema",
+      "vue"
+    ],
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/inimedia/vue-instant-form/issues"
+    },
+    "homepage": "https://github.com/inimedia/vue-instant-form#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/sshpk: tunneling socket could not be established, cause=connect ECONNREFUSED 202.9.85.34:443
+      at ClientRequest.onError (/usr/local/lib/node_modules/yarn/node_modules/tunnel-agent/index.js:176:17)
+      at ClientRequest.g (events.js:291:16)
+      at emitOne (events.js:96:13)
+      at ClientRequest.emit (events.js:188:7)
+      at Socket.socketErrorListener (_http_client.js:310:9)
+      at emitOne (events.js:96:13)
+      at Socket.emit (events.js:188:7)
+      at emitErrorNT (net.js:1276:8)
+      at _combinedTickCallback (internal/process/next_tick.js:74:11)
+      at process._tickCallback (internal/process/next_tick.js:98:9)

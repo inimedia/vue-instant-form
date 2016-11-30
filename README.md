@@ -7,13 +7,11 @@
 
 #### Quick Install
 ``` bash
-npm install --save git+http://60f15f52df5cc973766c47c26ab179c7c00b034b:adwidianjaya@git64.inimedia.co.id/adwidianjaya/vue-schema-form.git
-```
+# yarn
+yarn add vue-instant-form
 
-#### Custom Install (Token Required)
-
-``` bash
-npm install --save git+http://{gogs-token}:username@git64.inimedia.co.id/adwidianjaya/vue-schema-form.git
+# npm
+npm install --save vue-instant-form
 ```
 
 

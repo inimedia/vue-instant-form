@@ -129,7 +129,7 @@ new Vue({
           // default: 2000.00,
           default: 0,
           min: 0,
-          max: 100000,
+          max: 1000000,
           visible: true,
           disabled: false,
           readonly: false,

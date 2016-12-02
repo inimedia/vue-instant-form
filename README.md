@@ -185,7 +185,7 @@ schema: {
 }
 ```
 
-Note: currency field supports only Indonesian Rupiah (Rp.) at the moment.
+Note: currency field supports only Indonesian Rupiah (Rp.) at the moment and highly utilizes jquery!
 
 ### Phone Number
 

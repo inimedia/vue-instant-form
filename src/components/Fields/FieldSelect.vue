@@ -38,8 +38,14 @@
 //          }
           var keyValue = this.value[optionValue];
 
-          value = this.field.options[0][optionValue];
-          objValue = this.field.options[0];
+          if (!this.field.options || this.field.options.length == 0) {
+            value = '';
+            objValue = '';
+          }
+          else {
+            value = this.field.options[0][optionValue];
+            objValue = this.field.options[0];
+          }
           for (var i=0;i<this.field.options.length;i++) {
             if (this.field.options[i][optionValue] == keyValue) {
               value = this.field.options[i][optionValue];
@@ -60,7 +66,13 @@
           if (this.field.optionValue) {
             optionValue = this.field.optionValue;
           }
-          value = this.field.options[0][optionValue];
+
+          if (!this.field.options || this.field.options.length == 0) {
+            value = '';
+          }
+          else {
+            value = this.field.options[0][optionValue];
+          }
           for (var i=0;i<this.field.options.length;i++) {
             if (this.field.options[i][optionValue] == this.value) {
               value = this.field.options[i][optionValue];
@@ -96,8 +108,14 @@
 //            }
             var keyValue = this.value[this.optionValue];
 
-            value = this.field.options[0][this.optionValue];
-            objValue = this.field.options[0];
+            if (!this.field.options || this.field.options.length == 0) {
+              value = '';
+              objValue = '';
+            }
+            else {
+              value = this.field.options[0][this.optionValue];
+              objValue = this.field.options[0];
+            }
             for (var i=0;i<this.field.options.length;i++) {
               if (this.field.options[i][this.optionValue] == keyValue) {
                 value = this.field.options[i][this.optionValue];
@@ -118,7 +136,13 @@
             if (this.field.optionValue) {
               this.optionValue = this.field.optionValue;
             }
-            value = this.field.options[0][this.optionValue];
+
+            if (!this.field.options || this.field.options.length == 0) {
+              value = '';
+            }
+            else {
+              value = this.field.options[0][this.optionValue];
+            }
             for (var i=0;i<this.field.options.length;i++) {
               if (this.field.options[i][this.optionValue] == this.value) {
                 value = this.field.options[i][this.optionValue];
@@ -138,7 +162,13 @@
           }
           else {
             this.optionValue = this.field.trackby;
-            objValue = this.field.options[0];
+
+            if (!this.field.options || this.field.options.length == 0) {
+              objValue = '';
+            }
+            else {
+              objValue = this.field.options[0];
+            }
             for (var i=0;i<this.field.options.length;i++) {
               if (this.field.options[i][this.optionValue] == val) {
                 objValue = this.field.options[i];

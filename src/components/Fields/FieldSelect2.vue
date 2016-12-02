@@ -54,8 +54,14 @@
 //              }
               var keyValue = vm.modelValue;
 
-              value = vm.field.options[0][optionValue];
-              objValue = vm.field.options[0];
+              if (!this.field.options || this.field.options.length == 0) {
+                value = '';
+                objValue = '';
+              }
+              else {
+                value = vm.field.options[0][optionValue];
+                objValue = vm.field.options[0];
+              }
               for (var i=0;i<vm.field.options.length;i++) {
                 if (vm.field.options[i][optionValue] == keyValue) {
                   value = vm.field.options[i][optionValue];
@@ -75,7 +81,13 @@
               if (vm.field.optionValue) {
                 optionValue = vm.field.optionValue;
               }
-              value = vm.field.options[0][optionValue];
+
+              if (!this.field.options || this.field.options.length == 0) {
+                value = '';
+              }
+              else {
+                value = vm.field.options[0][optionValue];
+              }
               for (var i=0;i<vm.field.options.length;i++) {
                 if (vm.field.options[i][optionValue] == vm.modelValue) {
                   value = vm.field.options[i][optionValue];
@@ -97,7 +109,13 @@
             if (vm.field.optionValue) {
               optionValue = vm.field.optionValue;
             }
-            value = vm.field.options[0][optionValue];
+
+           if (!this.field.options || this.field.options.length == 0) {
+                      value = '';
+           }
+           else {
+           value = vm.field.options[0][optionValue];
+           }
             for (var i = 0; i < vm.field.options.length; i++) {
               if (vm.field.options[i][optionValue] == vm.modelValue) {
                 value = vm.field.options[i][optionValue];
@@ -132,8 +150,14 @@
 //          }
           var keyValue = this.value[optionValue];
 
-          value = this.field.options[0][optionValue];
-          objValue = this.field.options[0];
+          if (!this.field.options || this.field.options.length == 0) {
+            value = '';
+            objValue = '';
+          }
+          else {
+            value = this.field.options[0][optionValue];
+            objValue = this.field.options[0];
+          }
           for (var i=0;i<this.field.options.length;i++) {
             if (this.field.options[i][optionValue] == keyValue) {
               value = this.field.options[i][optionValue];
@@ -153,7 +177,13 @@
           if (this.field.optionValue) {
             optionValue = this.field.optionValue;
           }
-          value = this.field.options[0][optionValue];
+
+          if (!this.field.options || this.field.options.length == 0) {
+            value = '';
+          }
+          else {
+            value = this.field.options[0][optionValue];
+          }
           for (var i=0;i<this.field.options.length;i++) {
             if (this.field.options[i][optionValue] == this.value) {
               value = this.field.options[i][optionValue];
@@ -212,8 +242,14 @@
             }
             var keyValue = this.value[optionValue];
 
-            value = this.field.options[0][optionValue];
-            objValue = this.field.options[0];
+            if (!this.field.options || this.field.options.length == 0) {
+              value = '';
+              objValue = '';
+            }
+            else {
+              value = this.field.options[0][optionValue];
+              objValue = this.field.options[0];
+            }
             for (var i=0;i<this.field.options.length;i++) {
               if (this.field.options[i][optionValue] == keyValue) {
                 value = this.field.options[i][optionValue];
@@ -234,7 +270,13 @@
             if (this.field.optionValue) {
               optionValue = this.field.optionValue;
             }
-            value = this.field.options[0][optionValue];
+
+            if (!this.field.options || this.field.options.length == 0) {
+              value = '';
+            }
+            else {
+              value = this.field.options[0][optionValue];
+            }
             for (var i=0;i<this.field.options.length;i++) {
               if (this.field.options[i][optionValue] == this.value) {
                 value = this.field.options[i][optionValue];

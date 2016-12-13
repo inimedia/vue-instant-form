@@ -58,6 +58,7 @@
   import FieldFileUpload from './Fields/FieldFileUpload.vue';
   import FieldMessage from './Fields/FieldMessage.vue';
   import FieldList from './Fields/FieldList.vue';
+  import FieldTextarea from './Fields/FieldTextarea.vue';
 
   export default{
     props: {
@@ -127,7 +128,8 @@
       'field-autocomplete': FieldAutoComplete,
       'field-file-upload': FieldFileUpload,
       'field-message': FieldMessage,
-      'field-list': FieldList
+      'field-list': FieldList,
+      'field-textarea': FieldTextarea
     },
     methods: {
       onSubmit: function () {

@@ -173,6 +173,15 @@ new Vue({
           // readonly: true,
           // disabled: true,
           help: 'This is help block',
+        },
+        description: {
+          type: 'textarea',
+          label: 'Description',
+          default: '',
+          placeholder: 'Please enter your description here',
+          onChanged: function (val) {
+            console.log('onChanged description', val);
+          }
         }
       },
       actions: {

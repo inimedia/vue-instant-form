@@ -29,6 +29,7 @@ npm install --save vue-instant-form
 * [File Upload](#file-upload)
 * [List Field](#list)
 * [Plain Message](#message)
+* [Text Area](#text-area)
 
 
 ## Setup
@@ -131,7 +132,7 @@ schema: {
     placeholder: 'Your full name',
     help: 'Please type your full name',
     onChanged: function (val) {
-      console.log('onChanged nama_bahan', val, vm.schema);
+      console.log('onChanged', val);
     }
   }
 }
@@ -475,6 +476,27 @@ Complete Laravel package (https://github.com/inimedia/foundation) can be install
 ```sh
 composer require inimedia/foundation
 ```
+
+### Text Area
+
+``` javascript
+data: {
+  name: 'Lorem ipsum dolor sit amet...'
+},
+schema: {
+  description: {
+    type: 'textarea',
+    label: 'Description',
+    rows: '5',
+    default: '',
+    placeholder: 'Please enter your description here',
+    onChanged: function (val) {
+      console.log('onChanged', val);
+    }
+  }
+}
+```
+
 
 ## TODO
 

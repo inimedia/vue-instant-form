@@ -481,7 +481,7 @@ composer require inimedia/foundation
 
 ``` javascript
 data: {
-  name: 'Lorem ipsum dolor sit amet...'
+  description: 'Lorem ipsum dolor sit amet...'
 },
 schema: {
   description: {

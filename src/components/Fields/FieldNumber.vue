@@ -11,7 +11,7 @@
          :placeholder="field.placeholder">
 </template>
 <script>
-  import {isFunction} from 'lodash';
+  import {isFunction, isNaN} from 'lodash';
   export default{
     props: [ 'field', 'value' ],
     data: function () {
@@ -36,11 +36,15 @@
     watch: {
       value: function (val) {
         var value = val;
+        if (isNaN(value)) {
+          value = 0;
+          val = 0;
+        }
         if (!this.value && this.field.default) {
           value = parseFloat(this.field.default);
         }
         else {
-          value = parseFloat(this.value);
+          value = parseFloat(val);
         }
         if (this.field.min && value < this.field.min) {
           value = this.field.min;
